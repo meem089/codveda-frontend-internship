@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #1f2937;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.navbar h2 {
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;
+}
+
+.nav-links button {
+  border: none;
+  padding: 9px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+  color: #1f2937;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-links button:hover {
+  transform: translateY(-2px);
+}
+
+/* Dark Mode */
+.dark-navbar {
+  background-color: #111827;
+}
+
+body:has(.dark-navbar) {
+  background-color: #111827;
+  color: white;
+}
+
+body:has(.dark-navbar) .hero h1,
+body:has(.dark-navbar) .page-section h1 {
+  color: white;
+}
+
+body:has(.dark-navbar) .hero p,
+body:has(.dark-navbar) .page-section p {
+  color: #d1d5db;
+}
+
+body:has(.dark-navbar) .feature {
+  background-color: #1f2937;
+  color: white;
+}
+
+body:has(.dark-navbar) .feature h2 {
+  color: white;
+}
+
+body:has(.dark-navbar) .feature p {
+  color: #d1d5db;
+}
+
+/* Main */
+main {
+  min-height: calc(100vh - 70px);
+  transition: all 0.3s ease;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #333;
+  font-size: 17px;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 60px;
+}
+
+.feature {
+  width: 280px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h2 {
+  margin-bottom: 15px;
+  color: #111827;
+  font-size: 24px;
+}
+
+.feature p {
+  line-height: 1.6;
+  color: #333;
+  font-size: 16px;
+}
+
+/* About & Contact */
+.page-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.page-section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.page-section p {
+  line-height: 1.7;
+  color: #333;
+  font-size: 17px;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .feature {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hero {
+    padding: 70px 20px 40px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .page-section h1 {
+    font-size: 32px;
+  }
+}
