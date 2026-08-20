@@ -1,0 +1,39 @@
+{
+  "name": "task-1-custom-component-library",
+  "version": "1.0.0",
+  "description": "Reusable React component library with accessible and customizable Button, Input, Card and Modal components.",
+  "type": "module",
+  "main": "./dist/custom-component-library.umd.cjs",
+  "module": "./dist/custom-component-library.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "vite build"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "component-library",
+    "storybook",
+    "ui"
+  ],
+  "author": "Meem",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.8.1"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@storybook/react-vite": "^10.5.9",
+    "storybook": "^10.5.9",
+    "vite": "^7.3.6",
+    "@vitejs/plugin-react": "^4.0.0"
+  }
+}
