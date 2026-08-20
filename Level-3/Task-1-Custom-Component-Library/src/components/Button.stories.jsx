@@ -12,18 +12,22 @@ const meta = {
 export default meta;
 
 export const Primary = {
-  args: {
-    children: "Primary Button",
-    variant: "primary",
-    size: "medium",
+  args:{
+    children:"Buy Now",
+    variant:"primary",
+    size:"large",
+    type:"button"
   },
 };
 
 export const Secondary = {
-  args: {
-    children: "Secondary Button",
-    variant: "secondary",
-    size: "medium",
+  args:{
+    children:"Secondary Button",
+    variant:"secondary",
+    size:"small",
+    disabled:false,
+    type:"reset",
+    ariaLabel:""
   },
 };
 
@@ -36,10 +40,11 @@ export const Danger = {
 };
 
 export const Outline = {
-  args: {
-    children: "Outline Button",
-    variant: "outline",
-    size: "medium",
+  args:{
+    children:"Outline Button",
+    variant:"outline",
+    size:"large",
+    type:"submit"
   },
 };
 
